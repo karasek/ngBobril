@@ -1,0 +1,33 @@
+{
+  "name": "ngbobril",
+  "author": "karasek",
+  "scripts": {
+    "build": "gulp uglify"
+  },
+  "version": "0.0.1",
+  "main": "ngBobril.js",
+  "description": "Use Bobril Components in Angular (inspired by ngReact)",
+  "homepage": "https://github.com/karasek/ngBobril",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karasek/ngBobril.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "angular": "<2.0.0",
+    "bobril": ">=1.0.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "keywords": [
+    "angularjs",
+    "angular",
+    "bobril",
+    "ngBobril"
+  ],
+  "devDependencies": {
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.1.0"
+  }
+}

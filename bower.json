@@ -1,0 +1,24 @@
+{
+  "name": "ngBobril",
+  "author": "karasek",
+  "version": "0.0.1",
+  "main": "ngBobril.js",
+  "description": "Use Bobril Components in Angular (inspired by ngReact)",
+  "homepage": "https://github.com/karasek/ngBobril",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karasek/ngBobril.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "angular": "<2.0.0",
+    "bobril": ">=1.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "angularjs",
+    "angular",
+    "bobril",
+    "ngBobril"
+  ]
+}
