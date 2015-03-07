@@ -2,7 +2,7 @@
 
 The [Bobril](https://github.com/Bobris/Bobril) library can be used as a view component in web applications. ngBobril is an Angular module that allows Bobril Components to be used in [AngularJS](https://angularjs.org/) applications.
 
-ngBobril is based on [ngReact](http://davidchang.github.io/ngBobril/) library
+ngBobril is based on [ngReact](http://davidchang.github.io/ngReact/) library
 
 # Run example
 
