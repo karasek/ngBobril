@@ -8,9 +8,12 @@
 
 (function (root, factory) {
   if (!b) { throw Error('Cannot find bobril library'); }
-  
+ 
   b.init(function () { return false; });
-  if (typeof module !== 'undefined' && module.exports) {
+     // Already resolved
+  if (root.b != 'undefined' && root.angular != 'undefined') {
+    root.ngBobril = factory(root.b, root.angular);
+  } else if (typeof module !== 'undefined' && module.exports) {
     // CommonJS
     module.exports = factory(require('bobril'), require('angular'));
   } else if (typeof define === 'function' && define.amd) {
@@ -19,8 +22,7 @@
       return (root.ngBobril = factory(bobril, angular));
     });
   } else {
-    // Global Variables
-    root.ngBobril = factory(root.b, root.angular);
+    throw new Error('Unable to resolve dependencies');
   }
 }(this, function ngBobril(b, angular) {
   'use strict';
