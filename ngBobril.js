@@ -11,19 +11,12 @@
  
   b.init(function () { return false; });
      // Already resolved
-  if (root.b != 'undefined' && root.angular != 'undefined') {
-    root.ngBobril = factory(root.b, root.angular);
-  } else if (typeof module !== 'undefined' && module.exports) {
-    // CommonJS
-    module.exports = factory(require('bobril'), require('angular'));
-  } else if (typeof define === 'function' && define.amd) {
-    // AMD
-    define(['bobril', 'angular'], function (bobril, angular) {
-      return (root.ngBobril = factory(bobril, angular));
-    });
-  } else {
-    throw new Error('Unable to resolve dependencies');
-  }
+   if (root.b != 'undefined' && root.angular != 'undefined') {
+        root.ngBobril = factory(root.b, root.angular);
+    } else {
+        throw new Error('Unable to resolve dependencies');
+    }
+
 }(this, function ngBobril(b, angular) {
   'use strict';
 
